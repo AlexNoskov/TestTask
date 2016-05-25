@@ -1,0 +1,14 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+USE [master];
+GO
+
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'TestData')
+	DROP DATABASE TestData;
+GO
+
+CREATE DATABASE TestData;
+GO
