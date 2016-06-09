@@ -56,6 +56,13 @@ namespace UnitTestProject
         {
             Sequencer<Int32> sequencer = new Sequencer<int>(SourceValues_Sequencer_Int.BadPerformance);
             Panel_Sequencer<Int32>.PutOrder(sequencer, SourceValues_Sequencer_Int.BadPerformance_Direct);
-        }        
+        }
+
+        [TestMethod]
+        public void Sequencer_PutOrder_BadPerformance_Direct()
+        {
+            Sequencer<Int32> sequencer = new Sequencer<int>(SourceValues_Sequencer_Int.BadPerformance_Direct);
+            Panel_Sequencer<Int32>.PutOrder(sequencer, SourceValues_Sequencer_Int.BadPerformance_Direct);
+        }
     }
 }
